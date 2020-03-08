@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+<section>
+    <div>
+        <input id="output" type="text" value="0" maxlength="10">
+        <form name="calc">
+        
+                <input type="button" value="*" onclick="addOp('*')">
+                <input type="button" value="/" onclick="addOp('/')">
+                <input type="button" value="-" onclick="addOp('-')">
+                <input type="button" value="+" onclick="addOp('+')">
+
+                <input type="button" value="." onclick="addDot('.')">
+                <input type="button" value="9" onclick="addNum(9)">
+                <input type="button" value="8" onclick="addNum(8)">
+                <input type="button" value="7" onclick="addNum(7)">
+                
+                <input type="button" value="6" onclick="addNum(6)">
+                <input type="button" value="5" onclick="addNum(5)">
+                <input type="button" value="4" onclick="addNum(4)">
+                <input type="button" value="3" onclick="addNum(3)">
+        
+                <input type="button" value="2" onclick="addNum(2)">
+                <input type="button" value="1" onclick="addNum(1)">
+                <input type="button" value="0" onclick="addNum(0)">
+                <input type="button" value="=" onclick="equals()">
+        
+                <input type="button" value="AC" onclick="clearCalc()">
+                
+          
+        </form>
+
+     
+    </div>
+
+</section>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
