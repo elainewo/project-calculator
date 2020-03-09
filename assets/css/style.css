@@ -8,7 +8,22 @@ section{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: rgb(46, 46, 46);
+    background: url(https://images.unsplash.com/photo-1528818955841-a7f1425131b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80) center/cover no-repeat;
+}
+
+h1{
+    margin-left: 10%;
+    margin-bottom: 12%;
+    letter-spacing: .8rem;
+    padding: 4%;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Bungee Inline', cursive;
+    font-weight: lighter;
+    text-transform: uppercase;
+    line-height: 2rem;
+    color:  #232323;
+    text-shadow: 2px 2px rgb(251, 255, 0);
 }
 
 input{
@@ -38,7 +53,7 @@ div{
     border: .5px solid rgb(71, 71, 71);
     border-radius: 10px;
     background: rgb(11, 240, 209);
-    padding: 5% 2.6% 4% 1.1%;
+    padding: 4% 2.6% 4% 1.1%;
     display: flex;
     flex-direction: column;
     justify-content: center;

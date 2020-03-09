@@ -42,13 +42,3 @@ function equals() {
     console.log(eval(x));
     document.getElementById("output").value = eval(x);
 }
-
-// function textLength() {
-//     let str = document.getElementById("output").value;
-//     let n = str.length;
-//     console.log(n);
-//     console.log(typeof (n));
-//     if (n > 10) {
-//         document.getElementById("result").value = "Only 10 characters allowed.";
-//     }
-// }
