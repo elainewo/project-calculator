@@ -1,44 +1,34 @@
+let ergebnis = document.getElementById("output");
 
-console.log("test")
-
-function addNum(Zeichen) {
-    if (document.getElementById("output").value == "0") {
-        document.getElementById("output").value = Zeichen;
-    }
-    else {
-        document.getElementById("output").value += Zeichen;
-    }
+function numer(Num) {
+  if (ergebnis.value == "0") {
+    ergebnis.value = Num;
+  } else ergebnis.value += Num;
+}
+function Reset() {
+  ergebnis.value = 0;
 }
 
-function addOp(Operators) {
-    let content = document.getElementById("output").value;
-
-    if (content == "0") {
-        document.getElementById("output").value;
-    } else {
-        document.getElementById("output").value += Operators;
-    }
+function delet() {
+  if (ergebnis.value.length == 1) {
+    ergebnis.value = 0;
+  } else
+    ergebnis.value = ergebnis.innerHTML.substr(0, ergebnis.value.length - 1);
+}
+function punkt(Pk) {
+  if (ergebnis.value.slice(-1) == ".") {
+    ergebnis.value += "";
+  } else ergebnis.value += Pk;
 }
 
-function addDot(dot) {
-    let str = document.getElementById("output").value;
-    let pos = str.indexOf(".");
-
-    if (pos == true) {
-        document.getElementById("output").value;
-    } else {
-        document.getElementById("output").value += dot;
-    }
+function operation(Op) {
+  if (ergebnis.value == "0") {
+    ergebnis.value = 0;
+  } else if (ergebnis.value.slice(-1) == Op) {
+    ergebnis.value += "";
+  } else ergebnis.value += Op;
 }
 
-function clearCalc() {
-    document.getElementById("output").value = "0";
-}
-
-function equals() {
-    let x = document.getElementById("output").value;
-    console.log(x)
-    eval(x);
-    console.log(eval(x));
-    document.getElementById("output").value = eval(x);
+function equally() {
+  ergebnis.value = eval(ergebnis.value);
 }
